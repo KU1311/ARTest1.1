@@ -25,7 +25,14 @@ function staticLoadPlaces() {
                 lat: 22.321695,
                 lng: 114.209075,
             }
-        },    
+        },
+	{
+            name: 'P4',
+            location: {
+                lat: 22.321143,
+                lng: 114.208416,
+            }
+        }, 
     ];
 }
 
