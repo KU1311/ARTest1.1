@@ -19,6 +19,13 @@ function staticLoadPlaces() {
                 lng: 114.209032,
             }
         },
+	{
+            name: 'P3',
+            location: {
+                lat: 22.321695,
+                lng: 114.209075,
+            }
+        },    
     ];
 }
 
@@ -33,7 +40,7 @@ function renderPlaces(places) {
         model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
         model.setAttribute('gltf-model', './assets/Enero/ENERO.gltf');
         model.setAttribute('rotation', '0 180 0');
-        model.setAttribute('scale', '10 10 10');
+        model.setAttribute('scale', '100 100 100');
 
         model.addEventListener('loaded', () => {
             window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
