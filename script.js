@@ -8,31 +8,17 @@ function staticLoadPlaces() {
         {
             name: 'P1',
             location: {
-                lat: 22.321536,
-                lng: 114.208861,
+                lat: 22.321678,
+                lng: 114.208998,
             }
         },
 	{
             name: 'P2',
             location: {
-                lat: 22.321766,
-                lng: 114.209032,
+                lat: 22.321183,
+                lng: 114.208537,
             }
         },
-	{
-            name: 'P3',
-            location: {
-                lat: 22.321695,
-                lng: 114.209075,
-            }
-        },
-	{
-            name: 'P4',
-            location: {
-                lat: 22.321143,
-                lng: 114.208416,
-            }
-        }, 
     ];
 }
 
@@ -45,7 +31,7 @@ function renderPlaces(places) {
 
         let model = document.createElement('a-entity');
         model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
-        model.setAttribute('gltf-model', './assets/magnemite/scene.gltf');
+        model.setAttribute('gltf-model', './assets/plane/test_plane.gltf');
         model.setAttribute('rotation', '0 0 0');
         model.setAttribute('scale', '1 1 1');
 
