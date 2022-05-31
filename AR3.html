@@ -14,10 +14,18 @@
     </script>
 </head>
 	
-<div style="width:100%;height:50px;text-align: center; color:white;" class="ui"><button onclick="getLocation()">Current Location</button>Info header</div>
+<div style="width:100%;height:50px;text-align: center; color:white;" class="ui"><button onclick="fit()">Current Location</button>Version 1.1.4</div>
 	<p> LINE 1 </p>
 <p id="demo"></p>
 
+function fit(){
+   const elem = document.querySelector('#panes> .right');
+   elem.style.display = elem.style.display == 'none' ? '' : 'none';
+  
+}
+
+document.getElementById("btn").addEventListener("click", fit);
+	
 <div id="panes">
   <div class="left"> Stuff On Left</div>
   <div class="right">Stuff on right</div>
