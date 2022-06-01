@@ -12,13 +12,7 @@ function staticLoadPlaces() {
                 lng: 114.20900059,
             }
         },
-	{
-            name: 'P2',
-            location: {
-                lat: 22.321183,
-                lng: 114.208537,
-            }
-        },
+	
     ];
 }
 
