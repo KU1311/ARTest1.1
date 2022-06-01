@@ -8,8 +8,8 @@ function staticLoadPlaces() {
         {
             name: 'P1',
             location: {
-                lat: 22.321678,
-                lng: 114.208998,
+                lat: 22.32167799,
+                lng: 114.20900059,
             }
         },
 	{
