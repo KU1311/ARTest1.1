@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      var x = document.getElementById("demo");
+
+      function getLocation() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+          x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+      }
+
+      function showPosition(position) {
+        x.innerHTML =
+          "Latitude: " +
+          position.coords.latitude +
+          "<br>Longitude: " +
+          position.coords.longitude;
+      }
+    </script>
+  </head>
+  <body>
+    <p><font size="100px">AR Test</font></p>
+    <br />
+
+    <button onclick="getLocation()">
+      <font size="100px">Show Location</font>
+    </button>
+    <script>
+      getLocation();
+    </script>
+    <br /><br /><br /><a href="AR"
+      ><button><font size="100px">AR</font></button></a>
+    <br /><br /><br />
+    <a href="AR2"
+      ><button><font size="100px">AR2</font></button></a
+    >
+    <br /><br /><br />
+    <a href="AR3"
+      ><button><font size="100px">AR3</font></button></a
+    >
+    <br /><br /><br />
+    <a href="map"
+      ><button><font size="100px">map</font></button></a
+    >
+    <br /><br /><br />
+    <a href="ar-a-frame"
+      ><button><font size="100px">A Frame</font></button></a
+    >
+
+    <p id="demo"></p>
+  </body>
+</html>
